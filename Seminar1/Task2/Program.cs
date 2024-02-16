@@ -7,12 +7,12 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 if (num < 0)
 {
-    num = num* (-1);
+    num = num * (-1);
 }
-int index = - num;
+int index = -num;
 while (index <= num)
 {
     Console.Write($"{index} ");
-    index ++; //index = index + 1;
-    ?//index--; => index = index - 1;
+    index++; //index = index + 1;
+    //index--; => index = index - 1;
 }
