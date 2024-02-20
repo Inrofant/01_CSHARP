@@ -16,15 +16,34 @@ while (i < n)
 }
 Console.WriteLine(max);
 
-
 ///для перебора по элементам массива, верхняя граница числа итераций не изветна
 //for (int i=0; - инициализация i < 10; - условие i = i+1 - модификация)
 //{
     ///...
 //}
 
+
+max = array[0];
+for(int j = 0; j < n; j++)
+{
+    if (array[j] > max)
+    {
+        max = array[j];
+    }
+}
+Console.WriteLine(max);
+
 ///для перебора по элементам массива, без использования индекса и изменения, только чтение
 //foreach (int e in array)
 //{
     //console.write(e);
 //}
+max = array[0];
+foreach (int e in array)
+{
+    if (e > max)
+    {
+        max = e;
+    }
+}
+Console.WriteLine(max);
